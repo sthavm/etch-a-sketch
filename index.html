@@ -5,5 +5,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <hr>
+    <div id="main">
+        <div id="grid"></div>
+        <div id="controls">
+            <button id="reset-btn" class="control-btn">Change Grid Density</button>
+            <button id="clear-btn" class="control-btn">Clear canvas</button>
+            <div id="mode-select">
+                <form>
+                    <label for="black">Black</label>
+                    <input type="radio" name="brush-color" id="black" value="black" checked="checked">
+                    <label for="rainbow">Rainbow!</label>
+                    <input type="radio" name="brush-color" id="rainbow" value="rainbow">
+                    <label for="shader">Shader</label>
+                    <input type="radio" name="brush-color" id="shader" value="shader">
+                    <label for="eraser">Eraser</label>
+                    <input type="radio" name="brush-color" id="eraser" value="eraser">
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>An experiment by sthavm</p>
+    </footer>
     <script src="script.js"></script>
 </body>
